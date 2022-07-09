@@ -25,6 +25,8 @@ li{
     height: 80px;
     background-color: #1A315A;
     text-align: center;
+    margin-left: 2%;
+    margin-top: 1.2%;
 }
 
 .heroSection{
@@ -44,6 +46,7 @@ li{
     font-size: 700%;
     width: 60px;
     margin-left: 5%;
+    color: #1A315A;
 }
 
 .aboutMe{
@@ -67,9 +70,24 @@ li{
 }
 
 h2{
-    justify-content: center;
     font-size: medium;
 }
+
+
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 4%;
+    background-color: #f5f5f5;
+}
+
+.card2{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom:4%;
+    background-color: #1A315A;
+}
+
 .recentWorks{
     display: block;
     text-align:center;
@@ -80,12 +98,61 @@ h2{
     align-content: center;
 }
 
+.recentWorkDescription{
+    padding-left: 3%;
+    margin-top: 4%;
+    background-color: #f5f5f5;
+    height: fit-content;
+}
+
+.recentWorkSum{
+    font-size: small;
+    padding-top: 6%;
+}
+
+.recentWorkTasksPerformed{
+    font-size: x-small;
+    display: flex;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+#button{
+    background-color: #1A315A;
+    border: 7;
+    border-color: #f4d35e;
+    color: #f4d35e;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30%;
+}
+
+.button2{
+    background-color: #f4d35e;
+    border: 7;
+    border-color: #1A315A;
+    color: #1A315A;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30%;
+}
+
+.recentWorkCallToAction{
+    background-color: #f5f5f5;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
 .footer{
     background-color: #FFF4DD;
 }
 
 .footerContent{
     text-align: center;
+    padding-bottom: 2%;
 }
 
 .footerSocial{
@@ -108,15 +175,6 @@ h2{
     font-weight: bold;
 }
 
-.card{
-    display: flex;
-}
-
-.card2{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .veterans{
     width: 700px;
     padding: 2%;
@@ -129,9 +187,34 @@ h2{
 
 .recentWorkTitle{
     font-size: larger;
-    font-weight: bolder;
 }
 
-@media screen and (max-width: 520px){
-   
+.button{
+    width: 100px;
 }
+
+@media screen and (max-width:500px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 500px;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        background-color: #f4d35e;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recentWorkCaseStudyBox {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
