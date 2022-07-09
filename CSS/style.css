@@ -193,18 +193,16 @@ h2{
     width: 100px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
     .card {
         display: flex;
         flex-direction: column;
         width: 100%;
-        font-size: 500px;
     }
 
     .card2 {
         display: flex;
         flex-direction: column;
-        background-color: #f4d35e;
     }
 
     .aboutMe {
